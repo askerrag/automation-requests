@@ -47,7 +47,13 @@ npm run dev
 
 ## Публикация
 
-Для Vercel задайте те же две переменные окружения, что и в `.env.local`, и задеплойте проект. После деплоя в Supabase → Authentication → URL Configuration укажите адрес сайта в Site URL.
+Рабочий сайт: https://automation-requests.vercel.app
+
+Репозиторий: https://github.com/askerrag/automation-requests
+
+На Vercel заданы `NEXT_PUBLIC_SUPABASE_URL` и `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`. GitHub к проекту Vercel не подключён, поэтому новый пуш сам сайт не обновляет: деплой делается отдельно.
+
+После смены адреса в Supabase → Authentication → URL Configuration укажите `https://automation-requests.vercel.app` в Site URL. С текущей схемой регистрация не ждёт письмо, поэтому сайт открывается и без этого шага.
 
 ## Как помогали AI-инструменты
 
